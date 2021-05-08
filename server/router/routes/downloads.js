@@ -22,7 +22,7 @@ module.exports = (app, db) => {
             });
     });
 
-    // GET one download by type
+    // GET download by type
     app.get('/downloads/type/:type', (req, res) => {
         const type = req.params.type;
         db.downloads.findAll({
